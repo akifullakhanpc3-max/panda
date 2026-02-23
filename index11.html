@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday chikne</title>
+    <link rel="stylesheet" href="index11.css">
+</head>
+<body>
+
+    <!-- Fireworks background -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- Button to open card -->
+    <button id="clickme">Click Me!</button>
+
+    <div class="birthday" id="birthday">
+        <div class="card glass">
+            
+            <!-- Photo container -->
+            <div class="photo-container">
+                <img src="data:image/png;base64,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" alt="Photo">
+            </div>
+
+            <!-- Front of card -->
+            <div class="front">
+                <h1>Happy Birthday</h1>
+                <h1>🐼 Bhen!</h1>
+                <h2>🎉🎉🎂🎂🎉🎉</h2>
+                
+            </div>
+            <div>
+                <button id="buttonme" style="margin: 4px;">
+                    click me
+                </button>
+            </div>
+
+            <!-- Inside of card -->
+            <div class="inside" id="inside">
+                <h3>Its your Bir tanem
+                Wishing you a day filled with love, laughter, and unforgettable moments. May this year bring you endless joy and success. Happy Birthday, my dear <span>BEST FRIEND</span>! 🎉🎂🎁
+                </h3>
+                <p>
+                    Its almost a year since we met.
+                    you still have the same position . in dino me bahut kuch change hoko hai. its been a while for our last conservation, 
+                    but you are still the same. 
+                    because of gossip i went so far from you. but i want to say that i am really sorry for that.
+                    agar mere se kya b galti hoko rhaito maaf karooooo.
+                    once again happy birthday <b>PANDAAA 🐼</b>. 
+                </p>
+                <button id="insta">More</button>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="scripts11.js"></script>
+</body>
+</html>
