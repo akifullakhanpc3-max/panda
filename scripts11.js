@@ -118,3 +118,15 @@ const insta = document.getElementById("insta");
 insta.onclick = function() {
     window.open("https://www.instagram.com/reel/DT4Z941gSVL/?igsh=NjVqaGRhZ2h1ZHdu", "_blank");
 }
+function forgive() {
+    let canvas= document.getElementById("birthday");
+    canvas.classList.add("forgive-background");
+    canvas.innerHTML=`
+    <div class="forgive-card">
+        <h1>Thank u panda</h1>
+        <p>if u forgived me leave a msg on insta i'll be there </p>
+        <h4>
+            once again happy bithday
+        </h4>
+    </div>`
+}
