@@ -126,7 +126,7 @@ function forgive() {
         <h1>Thank u panda</h1>
         <p>if u forgived me leave a msg on insta i'll be there </p>
         <h4>
-            once again happy bithday
+            once again happy bithday panda 🐼🐼
         </h4>
     </div>`
 }
